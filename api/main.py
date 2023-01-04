@@ -19,5 +19,4 @@ app.add_middleware(
 @app.get("/")
 def getNotes():
     res = getLocation()
-    content = jsonable_encoder(res)
-    return JSONResponse(content=content)
+    return res
